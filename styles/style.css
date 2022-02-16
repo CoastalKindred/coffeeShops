@@ -1,8 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Spartan", sans-serif;
+}
+
+p,
+a,
+li {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+}
+
+
+
+body {
+  background-color: rgb(191, 218, 191);
+}
+
+.indexHeader {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+main {
+  margin: 1rem;
+  
+}
+
+.indexHeader h1 {
+  align-self: center;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+
+.logo {
+  height: 10vh;
+}
+
+/*INDEX*/
+
+.districts a {
+  position: relative;
+}
+
+.districts a h2 {
+  position: absolute;
+  color: white;
+  margin: 0.5rem 0 0 0.3rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+.districts img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+
+@media screen and (min-width:810px) {
+  .districts {
+    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  gap: 2rem;
+  }
+  main {
+    margin: 0 5vw;
+  }
+}
+
+/*COFFEE SHOP LIST*/
+
+.districtHeader {
+  display: flex;
+  gap: 1rem;
+  padding: 25px;
+  background: url(../header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: center;
+}
+
+.districtHeader h1 {
+  align-self: center;
+  letter-spacing: 0.05rem;
+  color: white;
+  text-shadow: 2px 2px 3px #633824;
+  font-size: 1.8rem;
+}
+
+.coffeeShop {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.coffeeShop img {
+  width: 100%;
+  order: -1;
+  max-width: 300px;
+  margin: 2rem;
+}
+
+.coffeeInfo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 700px;
+}
+
+.coffeeInfo a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  width: 5rem;
+  text-align: center;
+  
+}
+ 
+
+@media screen and (min-width:530px) {
+  .districtHeader h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width:615px) {
+  .coffeeShop {
+    flex-wrap: wrap;
+  }
+  .coffeeShop img {
+    margin: 1rem;
+  }  
+}
+
+
+/*Coffe Shop*/
+
+.shopHeader {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.shopHeader a {
+  background-color: #633824;
+  align-self: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  color:white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+}
+
+.shopHeader a:hover {
+  background-color: white;
+  color:#633824
+}
+
+.coffeeShopSolo {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.coffeeShopSolo img {
+  width: 100%;
+  order: -1;
+  max-width: 500px;
+  margin: 2rem;
+}
+
+.coffeeInfoSolo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 700px;
+}
+
+.coffeeInfoSolo *{
+  margin-bottom: 0.3rem; 
+}
+
+.coffeeInfoSolo a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  width: 5rem;
+  text-align: center;
+  
+}
+
 .cafeImg {
   max-width: 50%;
 }
 
-.temporaryClosed {
+.showTC {
   background-color: red;
-  display: inline-block;
+  width: 8rem;
+  padding: 0.2rem 0.5rem;
+}
+
+
+@media screen and (max-width:615px) {
+  .coffeeShopSolo {
+    flex-wrap: wrap;
+  }
+  .coffeeShopSolo img {
+    margin: 0;
+  }
 }
