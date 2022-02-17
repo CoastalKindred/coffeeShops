@@ -25,11 +25,7 @@ fetch(url, options)
 .catch((e) => {
 // Woops, something went wrong
 console.error("An error occured:", e.message);
-
 });
-
-
-
 
 function handleData(coffeeshops) {
     coffeeshops.forEach((coffeeshop) => {
@@ -45,13 +41,7 @@ function handleData(coffeeshops) {
     copy.querySelector(".rating").textContent = "★".repeat(coffeeshop.rating);
     copy.querySelector(".coffeeShop img").src = `https://source.unsplash.com/random/?cafe+${Math.floor(Math.random()*100)}`;
 
-
-    
-
-    
     document.querySelector("h1").textContent = coffeeshop.area;
-
-
     //grab parent
     const parent = document.querySelector("main");
     //append
