@@ -43,6 +43,8 @@ function handleData(coffeeshops) {
     copy.querySelector(".coffeeShop a").href = `coffeeShop.html?id=${coffeeshop._id}`;
     copy.querySelector(".address").textContent = coffeeshop.address;
     copy.querySelector(".rating").textContent = "★".repeat(coffeeshop.rating);
+    copy.querySelector(".coffeeShop img").src = `https://source.unsplash.com/random/?cafe+${Math.floor(Math.random()*100)}`;
+
 
     
 
