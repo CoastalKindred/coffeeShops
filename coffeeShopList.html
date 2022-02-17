@@ -1,58 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Coffe Shop List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Spartan&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <title>Coffe Shop List</title>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Spartan&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-
-<body>
-
-  <header>
-    <div class="districtHeader">
-      <img class="logo" src="coffeeshopLogo" alt="Logo">
-      <h1>District</h1>
-    </div>
-  </header>
-  <main>
-
-    <div class="coffeeShop">
-      <div class="coffeeInfo">
-        <h2>Bob's cafe</h2>
-        <p class="rating"></p>
-        <p class="address"></p>
-          <a href="coffeeShop.html">More Info</a>
+  <body>
+    <header>
+      <div class="districtHeader">
+        <a href="index.html">
+          <img class="logo" src="coffeeshopLogo" alt="Logo" />
+        </a>
+        <h1>District</h1>
       </div>
-      <img src="coffeeShop.png" alt="">
-    </div>
-    
-  
+    </header>
 
-    <p class="district"></p>
-    <p class="address"></p>
-    <img class="cafeImg" src="" alt="" />
-    <p class="delivery"></p>
-    <p class="price"></p>
-    <p class="rating"></p>
-    <p class="temporaryClosed"></p>
-  </main>
-  <template>
-    <h2></h2>
-    <p class="district"></p>
-    <p class="address"></p>
-    <img class="cafeImg" src="" alt="" />
-    <p class="delivery"></p>
-    <p class="price"></p>
-    <p class="rating"></p>
-    <p class="temporaryClosed"></p>
-  </template>
-  <script src="js/coffeeShopList.js"></script>
-</body>
+    <main></main>
 
+    <template>
+      <div class="coffeeShop">
+        <div class="coffeeInfo">
+          <h2>Bob's cafe</h2>
+          <p class="rating"></p>
+          <p class="address"></p>
+          <a href="coffeeShop.html">More Info</a>
+        </div>
+        <img src="coffeeShop.png" alt="" />
+      </div>
+    </template>
+    <script src="js/coffeeShopList.js"></script>
+  </body>
 </html>

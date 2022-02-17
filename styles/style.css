@@ -16,8 +16,6 @@ li {
   font-size: 1.2rem;
 }
 
-
-
 body {
   background-color: rgb(191, 218, 191);
 }
@@ -30,7 +28,6 @@ body {
 
 main {
   margin: 1rem;
-  
 }
 
 .indexHeader h1 {
@@ -61,16 +58,13 @@ main {
   margin-bottom: 1rem;
 }
 
-
-
-@media screen and (min-width:810px) {
+@media screen and (min-width: 810px) {
   .districts {
-    
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  justify-items: center;
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
   }
   main {
     margin: 0 5vw;
@@ -85,7 +79,7 @@ main {
   padding: 25px;
   background: url(../header-image.png);
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
 }
 
@@ -124,26 +118,22 @@ main {
   padding: 0.2rem 0.5rem;
   width: 5rem;
   text-align: center;
-  
 }
- 
 
-@media screen and (min-width:530px) {
+@media screen and (min-width: 530px) {
   .districtHeader h1 {
     font-size: 3rem;
   }
-
 }
 
-@media screen and (max-width:615px) {
+@media screen and (max-width: 615px) {
   .coffeeShop {
     flex-wrap: wrap;
   }
   .coffeeShop img {
     margin: 1rem;
-  }  
+  }
 }
-
 
 /*Coffe Shop*/
 
@@ -153,20 +143,20 @@ main {
   gap: 1rem;
 }
 
-.shopHeader a {
+.shopHeader a:nth-child(2) {
   background-color: #633824;
   align-self: center;
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
-  color:white;
+  color: white;
   text-decoration: none;
   border-radius: 10px;
   padding: 0.2rem 0.5rem;
 }
 
-.shopHeader a:hover {
+.shopHeader a:nth-child(2):hover {
   background-color: white;
-  color:#633824
+  color: #633824;
 }
 
 .coffeeShopSolo {
@@ -189,8 +179,8 @@ main {
   max-width: 700px;
 }
 
-.coffeeInfoSolo *{
-  margin-bottom: 0.3rem; 
+.coffeeInfoSolo * {
+  margin-bottom: 0.3rem;
 }
 
 .coffeeInfoSolo a {
@@ -200,7 +190,6 @@ main {
   padding: 0.2rem 0.5rem;
   width: 5rem;
   text-align: center;
-  
 }
 
 .cafeImg {
@@ -213,8 +202,7 @@ main {
   padding: 0.2rem 0.5rem;
 }
 
-
-@media screen and (max-width:615px) {
+@media screen and (max-width: 615px) {
   .coffeeShopSolo {
     flex-wrap: wrap;
   }
